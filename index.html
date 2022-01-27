@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/styles/normalize.css" />
+    <title>JS beginning</title>
+</head>
+<body>
+    <style>
+        button {
+            margin-top: 5vw;
+            margin-left: 10vw;
+        }
+        h1 {
+            margin-top: 5vw;
+            margin-left: 10vw;
+        }
+        .points {
+            padding: 1vw 10vw;
+        }
+    </style>
+    <button onclick="Askname();">Жми!</button>
+    <script src="/assets/styles/index.js"></script>
+    <h1>Простой калькулятор</h1>
+    <p class="points"><label for="number1">Введите первое число</label><br>
+        <input id="number1" type="text" checked></p>
+    <p class="points"><label for="number2">Введите второе число</label><br>
+        <input id="number2" type="text" checked></p>
+    <p class="points"><label for="answer">Ответ:</label><br>
+        <div class="points" id="answer"></div>
+    </p>
+    <button onclick="sum();">Сложить + </button>
+    <button onclick="subtract();">Вычесть - </button>
+    <button onclick="multiply();">Умножить * </button>
+    <button onclick="divide();">Делить / </button>
+</body>
