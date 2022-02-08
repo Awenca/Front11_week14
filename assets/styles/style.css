@@ -1,0 +1,53 @@
+        .button1 {
+            display: flex;
+            margin-top: 1vw;
+            margin-left: 10vw;
+            gap: 20px;
+        }
+
+        h1 {
+            margin-top: 5vw;
+            margin-left: 10vw;
+        }
+
+        .points {
+            display: flex;
+            padding: 1vw 10vw;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 25vw;
+        }
+
+        .name {
+            margin: 3vw 10vw 1vw;
+        }
+
+        #yourName {
+            margin-left: 3vw;
+        }
+
+        .fons {
+            margin-top: 3vw;
+            margin-left: 10vw;
+            width: 15vw;
+        }
+
+        .slider {
+            display: flex;
+            flex-wrap: wrap;
+            width: 80%;
+            padding: 1vw 10vw;
+            gap: 1%;
+        }
+
+        .images {
+            width: calc(100% / 5);
+            object-fit: cover;
+            border: blanchedalmond;
+        }
+
+        .button2 {
+            margin-top: 1vw;
+            margin-left: 10vw;
+            align-items: start;
+        }

@@ -5,35 +5,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/styles/normalize.css" />
+    <link rel="stylesheet" href="./assets/styles/normalize.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
     <title>JS beginning</title>
 </head>
 <body>
-    <style>
-        button {
-            margin-top: 5vw;
-            margin-left: 10vw;
-        }
-        h1 {
-            margin-top: 5vw;
-            margin-left: 10vw;
-        }
-        .points {
-            padding: 1vw 10vw;
-        }
-    </style>
-    <button onclick="Askname();">Жми!</button>
-    <script src="/assets/styles/index.js"></script>
+
+    <!-- Ask name start -->
+    <div class="name">
+        <label for="yourName">Как тебя зовут?</label>
+        <input id="yourName" type="text">
+        <div id="greetings">
+        </div>
+    </div>
+    <button onclick="Askname();" class="button1">Жми!</button>
+    <!-- Ask name end -->
+
+    <!-- Calcs start -->    
     <h1>Простой калькулятор</h1>
-    <p class="points"><label for="number1">Введите первое число</label><br>
-        <input id="number1" type="text" checked></p>
-    <p class="points"><label for="number2">Введите второе число</label><br>
-        <input id="number2" type="text" checked></p>
-    <p class="points"><label for="answer">Ответ:</label><br>
-        <div class="points" id="answer"></div>
-    </p>
-    <button onclick="sum();">Сложить + </button>
-    <button onclick="subtract();">Вычесть - </button>
-    <button onclick="multiply();">Умножить * </button>
-    <button onclick="divide();">Делить / </button>
+    <div class="points">
+        <label for="number1">Введите первое число</label>
+        <input id="number1" type="number"></div>
+    <div class="points">
+        <label for="number2">Введите второе число</label>
+        <input id="number2" type="number"></div>
+    <div class="points">
+        <label for="answer">Ответ:</label>
+        <div class="result" id="answer"></div>
+    </div>
+    <div class="button1">
+        <button onclick="sum();">Сложить + </button>
+        <button onclick="subtract();">Вычесть - </button>
+        <button onclick="multiply();">Умножить * </button>
+        <button onclick="divide();">Делить / </button>
+    </div>
+    <!-- Calcs end -->
+
+    <!-- Change fons start -->
+    <div class="fons" id="fon1" onclick="changeColor1()">Нажми, чтоб поменять цвет</div>
+    <div class="fons" id="fon2" onclick="changeColor2()">Нажми, чтоб поменять цвет</div>
+    <!-- Change fons end -->
+
+    <!-- Gallery start -->
+    <div class="slider" id="gallery">
+        <img src="./assets/images/geraltyichen-HnvgJ8j7A9M-unsplash.jpeg" alt="film" class="images" name="img">
+        <img src="./assets/images/haydon-curteis-lateo-M2GNO1XlUqg-unsplash.jpeg" alt="film" class="images" name="img">
+        <img src="./assets/images/nat-chen-YmDKWrXcBm0-unsplash.jpeg" alt="film" class="images" name="img">
+        <img src="./assets/images/vasily-ledovsky-tyMW79c-tyo-unsplash.jpeg" alt="film" class="images" name="img">
+    </div>
+    <div class="button2">
+        <button onclick="prev();">Назад</button>
+        <button onclick="next();">Далее</button>
+    </div>
+    <!-- Gallery end -->
+    <script src="./assets/js/index.js"></script>
 </body>
